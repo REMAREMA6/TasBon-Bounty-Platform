@@ -79,3 +79,16 @@
 .custom-scrollbar {
   -ms-overflow-style: none;
 }
+
+/* Hide all scrollbars everywhere (page, sidebar, tab strips, modals, etc.)
+   Scrolling still works via touch / wheel / keyboard — only the visual
+   scrollbar track and thumb are removed. */
+* {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+*::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
+}
